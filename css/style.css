@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'ROBOTO' sans-serif;
+}
+
+.text-primary{
+    text-align: center;
+   color: yellowgreen;
+   
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top:0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.navbar ul {
+   display: flex;
+   align-items: center;
+}
+
+.navbar ul li a{
+    padding: 1rem;
+    color: #fff;
+   
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a:hover{
+    background: greenyellow ;
+    border-radius: 2px;
+   
+}
+
+#showcase{
+    background: url(../image/inks.JPG)
+    no-repeat center center/cover
+    ;
+    height: 100vh;
+    text-align: center;
+    color:#fff ;
+    top: 0;
+    
+}
+
+#showcase .note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    /*overlay*/
+    padding: 0 2rem;
+    top: 65;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.2);
+    
+}
+
+h3{
+    text-align: center;
+    color:yellowgreen;
+}
+
+
+
+.note{
+    padding: 4rem 0;
+    margin: auto 0;
+    color: #fff;
+}
+
+.skill{
+    display: flex;
+    flex-direction:row;
+   margin: 0.75em;
+   padding:-6rem;
+}
+
+.skill div{
+    padding: 4rem;
+}
+
+.text-1{
+    color: yellowgreen;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.contacts{
+    background: #333;
+    border: 3px #333 solid;
+    border-radius: 2px;
+}
+
+#contact .contacts ul {
+    display: flex;
+   flex-wrap: wrap;
+    color: #fff; 
+}
+
+#contact .contacts ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 2rem;
+    
+}
+
+#footer{
+    text-align: center;
+    border: 3px yellowgreen solid;
+}
+
+
+@media(max-width:500px){
+    .navbar{
+       flex-direction: column;
+       padding: 0.5rem;
+      
+    }
+
+   #skills .skill{
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+    .contacts{
+    margin: auto;
+    text-align: center;
+   }
+   .note{
+    font-size: x-large;
+   }
+}
+
+@media(max-width:768px){
+    .navbar{
+       flex-direction: column;
+       padding: 0.5rem;
+       font-size:x-large;
+    }
+
+   #skills .skill{
+      flex-direction: column;
+      font-size:x-large;
+   }
+    .contacts{
+    margin: auto;
+    text-align: center;
+    font-size:large;
+   }
+   .note{
+    font-size: xx-large;
+   }
+}
+@media(max-width:627px){
+    .navbar{
+       flex-direction: column;
+       padding: 0.5rem;
+       font-size:medium;
+    }
+
+   #skills .skill{
+      flex-direction: column;
+      font-size:medium;
+   }
+    .contacts{
+    margin: auto;
+    text-align: center;
+    font-size:smaller;
+    padding: 0.5rem;
+   }
+   .note{
+    font-size: medium;
+   }
+}
+
+
+
+
+
+
+
+   
+
+
